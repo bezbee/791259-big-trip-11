@@ -1,4 +1,4 @@
-`use strict`;
+'use strict';
 
 const TASK_COUNT = 3;
 
@@ -15,7 +15,7 @@ const createTripInfoTemplate = () =>
     </p>
   </section>`;
 
-  const createTripControlsTemplate = () =>
+const createTripControlsTemplate = () =>
   `<h2 class="visually-hidden">Switch trip view</h2>
   <nav class="trip-controls__trip-tabs  trip-tabs">
     <a class="trip-tabs__btn  trip-tabs__btn--active" href="#">Table</a>
@@ -43,7 +43,7 @@ const createTripFilterTemplate = () =>
     <button class="visually-hidden" type="submit">Accept filter</button>
   </form>`;
 
-  const createTripEventsSortTemplate = () =>
+const createTripEventsSortTemplate = () =>
   `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
     <span class="trip-sort__item  trip-sort__item--day">Day</span>
 
@@ -315,4 +315,4 @@ render(tripEventsElement, createTripEventsDayTemplate());
 const tripEventsListElement = tripEventsElement.querySelector(`.trip-events__list`);
 for (let i = 0; i < TASK_COUNT; i++) {
   render(tripEventsListElement, createTripEventsDaySingleEventTemplate());
-};
+}
